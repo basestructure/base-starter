@@ -1,0 +1,20 @@
+/* BASE_230 | LAYOUT | 230_BASE > BASE-STARTER | STRUCTURE - 2016-09-9 */
+
+// -------------------------------------
+// EXTEND
+
+	%sitecontainer_layout {
+		max-width: #{$width-base}rem;
+		margin-right: auto;
+		margin-left: auto;
+		@extend %clearfix !optional;
+	}
+
+
+// -------------------------------------
+// SELECTORS
+
+	.site-container {
+		@extend %sitecontainer !optional;
+		@extend %sitecontainer_layout !optional;
+	}

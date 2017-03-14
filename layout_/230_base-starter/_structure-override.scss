@@ -1,0 +1,22 @@
+/* BASE_230 | LAYOUT | 230_BASE > BASE-STARTER | STRUCTURE-OVERRIDE - 2016-10-03 */
+
+// -------------------------------------
+// EXTEND
+
+	%sitecontainer_override {}
+
+	%sitecontainer_edge {
+		max-width: none;
+	}
+
+
+// -------------------------------------
+// SELECTORS
+
+	.override .site-container {
+		@extend %sitecontainer_override !optional;
+	}
+
+	.edge .site-container {
+		@extend %sitecontainer_edge !optional;
+	}
