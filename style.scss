@@ -1,4 +1,4 @@
-/* BASE | BASE-230 > BASE-STARTER | STYLE - 2017-01-17 */
+/* BASE | BASE-230 > BASE-STARTER | STYLE - 2017-04-19 */
 /* BASE | BASE-230 | STYLE - 2016-11-23 */
 
 // THEME
@@ -13,15 +13,15 @@
 // SUZY
 @import 	"susy";
 
-// -------------------------------------------------------------------- VARIABLES | 2017-01-12
+// -------------------------------------------------------------------- VARIABLES | 2017-05-18
 @import 	"variables/230_base/susy";
-@import 	"variables/230_base/color";
+			@import 	"variables/230_base/color";
 @import 	"variables/230_base/space";
 @import 	"variables/230_base/line";
-@import 	"variables/230_base/fontfamily";
-@import 	"variables/230_base/fontsize";
-@import 	"variables/230_base/fontweight";
-@import 	"variables/230_base/lineheight";
+			@import 	"variables/230_model-basicsetup/fontfamily";
+			@import 	"variables/230_model-basicsetup/fontsize";
+			@import 	"variables/230_model-basicsetup/fontweight";
+			@import 	"variables/230_model-basicsetup/lineheight";
 @import 	"variables/230_base/break";
 @import 	"variables/230_base/width";
 
@@ -129,23 +129,24 @@
 @import 	"meta/230_base/pagination";
 
 // -------------------------------------------------------------------- MENU (STRUCTURE) | 2016-09-19
-//@import 	"menu/230_base/navprimary";
-//@import 	"menu/230_base/navsecondary";
+			//@import 	"menu/230_model-basicsetup/navprimary";
+			//@import 	"menu/230_model-basicsetup/navsecondary";
 
-// -------------------------------------------------------------------- MENU | 2016-09-19
-//@import 	"menu/230_base/menu";
-//@import 	"menu/230_base/submenu";
+// -------------------------------------------------------------------- MENU | 2017-04-26
+			@import 	"menu/230_model-basicsetup/menu";
+			@import 	"menu/230_model-basicsetup/submenu";
 
-// -------------------------------------------------------------------- MENU (MENUITEM) | 2016-09-19
-//@import 	"menu/230_base/menuitem";
-//@import 	"menu/230_base/menuitem-primary";
-//@import 	"menu/230_base/menuitem-secondary";
-//@import 	"menu/230_base/menuitem-widget";
-//@import 	"menu/230_base/menuitem-sidebar";
-//@import 	"menu/230_base/menuitem-footer";
+// -------------------------------------------------------------------- MENU (MENUITEM) | 2017-04-26
+			@import 	"menu/230_model-basicsetup/menuitem";
+			@import 	"menu/230_model-basicsetup/menuitem-gnm";
+			//@import 	"menu/230_model-basicsetup/menuitem-widget";
+			//@import 	"menu/230_model-basicsetup/menuitem-sidebar";
+			//@import 	"menu/230_model-basicsetup/menuitem-footer";
 
-// -------------------------------------------------------------------- MENU (MISC) | 2016-09-19
-//@import 	"menu/230_base/dropdown";
+// -------------------------------------------------------------------- MENU (MISC) | 2017-04-26
+			//@import 	"menu/230_model-basicsetup/dropdown";
+			@import 	"menu/230_model-basicsetup/toggle";
+			@import 	"menu/230_model-basicsetup/grm";
 
 // -------------------------------------------------------------------- STRUCTURE - SITE-CONTAINER | 2016-07-13
 @import 	"structure/230_base/sitecontainer";
@@ -171,39 +172,7 @@
 @import 	"footer/230_base/footerwidgets3";
 @import 	"footer/230_base/sitefooter";
 
-// -------------------------------------------------------------------- LAYOUT | 2016-09-29
-			@import 	"layout/230_base-starter/structure";
-			@import 	"layout/230_base-starter/structure-override";
-			@import 	"layout/230_base-starter/header";
-			@import 	"layout/230_base-starter/inner";
-			@import 	"layout/230_base-starter/inner-override";
-			@import 	"layout/230_base-starter/footer";
-
-			// MENU
-			@import 	"layout/230_base-starter/menunav";
-			@import 	"layout/230_base-starter/menu";
-			@import 	"layout/230_base-starter/menusubmenu";
-			@import 	"layout/230_base-starter/menuitem";
-			@import 	"layout/230_base-starter/menutoggle";
-			@import 	"layout/230_base-starter/menudropdown";
-
-@import 	"layout/230_base/widget";
-@import 	"layout/230_base/widgetarea";
-
-@import 	"layout/227_base/image";
-
-@import 	"layout/230_base/credit";
-
-//@import 	"layout/230_base/outside";
-//@import 	"layout/230_base/inside";
-			@import 	"layout/230_base-starter/full";
-			@import 	"layout/230_base-starter/cs";
-//@import 	"layout/230_base/sc";
-//@import 	"layout/230_base/css";
-//@import 	"layout/230_base/scs";
-//@import 	"layout/230_base/ssc";
-
-// -------------------------------------------------------------------- ENTRY | 2016-07-13
+// -------------------------------------------------------------------- ENTRY | 2017-07-13
 @import 	"entry/230_base/entry";
 @import 	"entry/230_base/entrytitle";
 @import 	"entry/230_base/entrymeta";
@@ -212,23 +181,62 @@
 @import 	"entry/230_base/entryfooter";
 @import 	"entry/230_base/entryimage";
 
-// -------------------------------------------------------------------- COMMENT | 2016-01-12
-@import 	"comment/227_base/entrycomments";
-@import 	"comment/227_base/commentlist";
-@import 	"comment/227_base/comment";
-@import 	"comment/227_base/comment-child";
-@import 	"comment/227_base/commentauthor";
-@import 	"comment/227_base/commentmeta";
-@import 	"comment/227_base/commentcontent";
-@import 	"comment/227_base/commentreply";
-@import 	"comment/227_base/commenteditlink";
-@import 	"comment/227_base/commentrespond";
-@import 	"comment/227_base/commentrespond-form";
-@import 	"comment/227_base/loggedinas";
-@import 	"comment/227_base/formallowedtags";
+// -------------------------------------------------------------------- LAYOUT | 2017-04-25
+			@import 	"layout/230_model-basicsetup/structure";
+			@import 	"layout/230_model-basicsetup/structure-override";
+			@import 	"layout/230_model-basicsetup/header";
+			@import 	"layout/230_model-basicsetup/header-override";
+			@import 	"layout/230_model-basicsetup/inner";
+			@import 	"layout/230_model-basicsetup/inner-override";
+			@import 	"layout/230_model-basicsetup/footer";
+			@import 	"layout/230_model-basicsetup/footer-override";
 
-// -------------------------------------------------------------------- ENTRY-ARCHIVE | 2016-07-13
-			@import 	"entry-archive/230_base-starter/entry";
+			// MENU
+			//@import 	"layout/230_model-basicsetup/menunav";
+			//@import 	"layout/230_model-basicsetup/menu";
+			//@import 	"layout/230_model-basicsetup/menusubmenu";
+			//@import 	"layout/230_model-basicsetup/menuitem";
+			//@import 	"layout/230_model-basicsetup/menutoggle";
+			//@import 	"layout/230_model-basicsetup/menudropdown";
+
+			@import 	"layout/230_model-basicsetup/widget";
+@import 	"layout/230_base/widgetarea";
+
+@import 	"layout/230_base/image";
+
+@import 	"layout/230_base/credit";
+@import 	"layout/230_base/accessibility";
+
+//@import 	"layout/230_base/outside";
+//@import 	"layout/230_base/inside";
+			@import 	"layout/230_model-basicsetup/full";
+			@import 	"layout/230_model-basicsetup/cs";
+			@import 	"layout/230_model-basicsetup/sc";
+//@import 	"layout/230_base/css";
+//@import 	"layout/230_base/scs";
+//@import 	"layout/230_base/ssc";
+
+			@import 	"layout/230_model-basicsetup/entry";
+
+// -------------------------------------------------------------------- COMMENT | 2017-04-19
+			@import 	"comment/230_model-basicsetup/entrycomments";
+			@import 	"comment/230_model-basicsetup/entrypings";
+			@import 	"comment/230_model-basicsetup/pinglist";
+			@import 	"comment/230_model-basicsetup/commentlist";
+			@import 	"comment/230_model-basicsetup/comment";
+			@import 	"comment/230_model-basicsetup/comment-child";
+			@import 	"comment/230_model-basicsetup/commentauthor";
+			@import 	"comment/230_model-basicsetup/commentmeta";
+			@import 	"comment/230_model-basicsetup/commentcontent";
+			@import 	"comment/230_model-basicsetup/commentreply";
+			@import 	"comment/230_model-basicsetup/commenteditlink";
+			@import 	"comment/230_model-basicsetup/commentrespond";
+			@import 	"comment/230_model-basicsetup/commentrespond-form";
+			@import 	"comment/230_model-basicsetup/loggedinas";
+			@import 	"comment/230_model-basicsetup/formallowedtags";
+
+// -------------------------------------------------------------------- ENTRY-ARCHIVE | 2017-04-19
+			@import 	"entry-archive/230_model-basicsetup/entry";
 @import 	"entry-archive/230_base/entrytitle";
 @import 	"entry-archive/230_base/entrymeta";
 @import 	"entry-archive/230_base/entryheader";
@@ -236,6 +244,7 @@
 @import 	"entry-archive/230_base/entryfooter";
 @import 	"entry-archive/230_base/entryimage";
 @import 	"entry-archive/230_base/archivedescription";
+			@import 	"entry-archive/230_model-basicsetup/archivepagination";
 
 // -------------------------------------------------------------------- ENTRY-FEATURED | 2016-01-12
 //@import 	"entry-featured/226_base/entry";

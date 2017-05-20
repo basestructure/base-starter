@@ -19,7 +19,7 @@ include_once( get_stylesheet_directory() . '/lib/theme-defaults.php' );
 // Set Localization (do not remove).
 add_action( 'after_setup_theme', 'genesis_sample_localization_setup' );
 function genesis_sample_localization_setup(){
-	load_child_theme_textdomain( 'base-starter', get_stylesheet_directory() . '/languages' );
+	load_child_theme_textdomain( 'genesis-sample', get_stylesheet_directory() . '/languages' );
 }
 
 // Add the helper functions.
@@ -47,7 +47,7 @@ define( 'CHILD_THEME_VERSION', '2.3.0.1' );
 
 // Enqueue Scripts and Styles.
 add_action( 'wp_enqueue_scripts', 'basestarter_enqueue_scripts_styles' );
-function basestarter_enqueue_scripts_styles() {
+function basestarter_sample_enqueue_scripts_styles() {
 
 	wp_enqueue_style( 'basestarter-fonts', '//fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Roboto+Condensed:300,400,700|Lato:100,300,400,700,900', array(), CHILD_THEME_VERSION );
 	wp_enqueue_style( 'dashicons' );
